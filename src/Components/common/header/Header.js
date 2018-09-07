@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
-// import AppBar from 'material-ui/AppBar';
 import AppBar from '@material-ui/core/AppBar';
-// import Toolbar from 'material-ui/Toolbar';
 import Toolbar from '@material-ui/core/Toolbar';
-// import Button from 'material-ui/Button';
 import Button from '@material-ui/core/Button';
-// import Typography from 'material-ui/Typography';
 import Typography from '@material-ui/core/Typography';
 
 import './Header.css';
