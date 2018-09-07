@@ -17,18 +17,18 @@ import registerServiceWorker from './registerServiceWorker'; // Gestiona los tie
 import './index.css';
 
 // ***** IMPORTAR COMPONENTES *****
-// import HolaMundo from './Components/HolaMundo/HolaMundo';
+import HolaMundo from './Components/HolaMundo/HolaMundo';
 import Header from './Components/common/header/Header';
 import Router from "./Router";
 
 const Root = () => {
     return (
         <div>
-            {/* <Reboot /> */}
             <Header />
             <div className="contenedor">
                 <Router />
             </div>
+            <HolaMundo nombre="Jonathan Mideros" edad="31" tipo="descripcion" />
         </div>
     )
 }
