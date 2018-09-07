@@ -13,12 +13,29 @@
 import React from 'react'; // Libreria de React
 import { render } from 'react-dom'; // Libreria para mostrar todos los contenidos en pantalla
 import registerServiceWorker from './registerServiceWorker'; // Gestiona los tiempos de carga y desempeño de la aplicacion
+// import Reboot from 'material-ui/Reboot';
+import './index.css';
 
 // ***** IMPORTAR COMPONENTES *****
-import HolaMundo from './Components/HolaMundo/HolaMundo';
+// import HolaMundo from './Components/HolaMundo/HolaMundo';
+import Header from './Components/common/header/Header';
+import Router from "./Router";
+
+const Root = () => {
+    return (
+        <div>
+            {/* <Reboot /> */}
+            <Header />
+            <div className="contenedor">
+                <Router />
+            </div>
+        </div>
+    )
+}
 
 // ***** RENDERIZAR COMPONENTES *****
-render(<HolaMundo nombre="Jonathan Mideros" edad="31" tipo="descripcion" />, document.getElementById('root'));
+// render(<HolaMundo nombre="Jonathan Mideros" edad="31" tipo="descripcion" />, document.getElementById('root'));
+render(<Root />, document.querySelector('#root'));
 
 
 
