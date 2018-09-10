@@ -22,7 +22,7 @@ class Header extends Component {
                             <a href="/liga">Equipos</a>
                         </Button>
                         <Button color="inherit" >
-                            <a href="/calendario">Calendarios</a>
+                            <a href="/calendarios">Calendarios</a>
                         </Button>
 
                     </Toolbar>
